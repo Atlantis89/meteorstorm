@@ -11,8 +11,10 @@ function meteorstorm(){
 
     var keys;
 
+    var text;
     var ship;
     var meteors = [];
+
 
     function preload(){
         //define the physics engine(erstmal raus, einfach erklären das ne billige standardphysik im hintergrund verfügbar ist)
@@ -34,8 +36,11 @@ function meteorstorm(){
         crash = game.add.audio('crash');
         music.loop = true;
         music.play();
-
+        //dazusagen, reihenfolge ist sehr wichtig
         game.add.sprite(0,0, 'background');
+
+        text = game.add.text(20, 20, "meteorstorm", { font: "25px Arial", fill: "#3debe9", align: "center" });
+
         ship = game.add.sprite(100, (game.world.height / 2) - 200, 'spaceship');
 
         keys = {
