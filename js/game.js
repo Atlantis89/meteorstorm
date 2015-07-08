@@ -17,9 +17,6 @@ function meteorstorm(){
 
 
     function preload(){
-        //define the physics engine(erstmal raus, einfach erklären das ne billige standardphysik im hintergrund verfügbar ist)
-        //game.physics.startSystem(Phaser.Physics.ARCADE);
-
         //laden der Bilder
         game.load.image('background', 'assets/crappyStarfield.png');
         game.load.image('meteor', 'assets/meteor.png');
